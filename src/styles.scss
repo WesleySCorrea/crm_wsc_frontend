@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+html {
+@include mat.theme((
+  color: (
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette,
+  ),
+  typography: Roboto,
+  density: 0,
+));
+
+color-scheme: light;
+background-color: var(--mat-sys-surface);
+color: var(--mat-sys-on-surface);
+font: var(--mat-sys-body-medium);
+
+}:root {
+  --secundaria: #e0e0e0;
+  --primaria: #003366;
+  --intercalada: #e6f0fa; 
+  --houver: #93c7ff;
+}
+
+html, body { 
+  height: 100%; 
+  background-color: var(--secundaria);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--secundaria);
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  min-height: 100%;
+}
+
+.container {
+    margin: 20px;
+    border: 5px solid var(--primaria);
+    border-radius: 20px;
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.table {
+  margin-top: 30px;
+  border: 2px solid var(--primaria);
+  overflow-x: auto;
+  border-radius: 16px;
+}

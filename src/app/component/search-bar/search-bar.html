@@ -1,0 +1,13 @@
+<div class="search-container">
+    <form class="form-container" (ngSubmit)="onSearch()">
+        <input type="text" [(ngModel)]="filters.numeroProposta" name="numeroProposta" placeholder="Nº Proposta" />
+        <input type="text" [(ngModel)]="filters.titulo" name="titulo" placeholder="Título" />
+        <input list="empresas" placeholder="Empresa..." [(ngModel)]="filters.empresa" name="empresa">
+        <datalist id="empresas">
+            <option *ngFor="let empresa of empresas" [value]="empresa"></option>
+        </datalist>
+        <input type="date" [(ngModel)]="filters.data" name="data" />
+
+        <button type="submit">🔍 Buscar</button>
+    </form>
+</div>

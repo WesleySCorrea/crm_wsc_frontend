@@ -1,0 +1,74 @@
+.table {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.mat-mdc-header-row {
+  background-color: var(--primaria);
+  color: var(--secundaria);
+}
+
+.mat-mdc-paginator {
+  background-color: var(--secundaria);
+  // color: var(--primaria);
+}
+
+.mat-mdc-row:nth-child(even) {
+  background-color: var(--intercalada); /* azul claro */
+}
+
+.mat-mdc-row:nth-child(odd) {
+  background-color: var(--secundaria); /* cinza claro */
+}
+
+.mat-elevation-z8 {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mat-mdc-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mat-mdc-row:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.mat-mdc-row:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.mat-column-proposta {
+  max-width: 25px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.mat-column-empresa {
+  max-width: 30px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.mat-column-status {
+  max-width: 30px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.mat-column-data {
+  max-width: 30px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.mat-column-descricao {
+  max-width: 300px;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.mat-mdc-row:hover {
+  background-color: var(--houver);
+  cursor: pointer;
+}

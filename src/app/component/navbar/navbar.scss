@@ -1,0 +1,38 @@
+.navbar {
+    background-color: var(--primaria);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+    min-height: 70px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.navbar button {
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid var(--secundaria);
+    color: var(--secundaria);
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: none;
+    user-select: none;
+    min-width: 100px;
+}
+
+.navbar button:hover {
+  transform: scale(1.05);      // aumenta 5%
+  background-color: rgba(255, 255, 255, 0.15); // fundo branco translúcido
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.icon {
+    display: flex;
+    gap: 10px;
+}

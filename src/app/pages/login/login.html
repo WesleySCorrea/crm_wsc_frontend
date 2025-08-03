@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="title-container">
+        <h1>CRM WSC</h1>
+    </div>
+    <div>
+        <form class="form-container">
+            <input type="email" name="email" [(ngModel)]="loginRequest.email" placeholder="email" />
+            <input type="password" name="password" [(ngModel)]="loginRequest.password" placeholder="password" />
+            <button type="submit" (click)="login()">Entrar</button>
+            <button type="button" (click)="esqueciSenha()">Esqueci a Senha</button>
+        </form>
+    </div>
+</div>
